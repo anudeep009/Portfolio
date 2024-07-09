@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
-import About from './About';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const webLinks = [
-    { name: 'About', path: '/About' },
+    { name: 'About', path: '/about' }, // Changed to lowercase 'about'
     { name: 'Projects', path: '/projects' },
     { name: 'Open Source', path: '/open-source' },
     { name: 'Guestbook', path: '/guestbook' },
