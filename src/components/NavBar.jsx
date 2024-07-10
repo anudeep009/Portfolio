@@ -7,14 +7,14 @@ const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const webLinks = [
-    { name: 'About', path: '/about' }, // Changed to lowercase 'about'
+    { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
     { name: 'Open Source', path: '/open-source' },
     { name: 'Guestbook', path: '/guestbook' },
   ];
 
   return (
-    <nav className="bg-gray-800 bg-opacity-80 fixed w-full top-0 z-20 backdrop-filter backdrop-blur-sm shadow-lg">
+    <nav className="bg-[#1a202c] bg-opacity-80 fixed w-full top-0 z-20 backdrop-filter backdrop-blur-sm shadow-lg">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
