@@ -5,7 +5,7 @@ const Intro = () => {
 	const typingIntervalRef = useRef(null);
 	const [arrItem, setArrItem] = useState(0);
 	const [typedText, setTypedText] = useState('');
-	const fullText = "Hey, It's so nice to see you here, thanks for visiting !";
+	const fullText = "Hey, It's so nice to see you here, thanks for visiting!";
 
 	const nextItem = () => {
 		setArrItem((arrItem + 1) % greetingList.length);
@@ -39,20 +39,14 @@ const Intro = () => {
 						<div
 							onMouseEnter={handleMouseEnter}
 							onMouseLeave={handleMouseLeave}
-							className='group absolute transition-all ease-in'
+							className='group relative transition-all ease-in'
 						>
-							<div className='wrap-avatar'>
-								<div className="flex flex-wrap justify-center">
-									<div>
-										<img src="https://i.imghippo.com/files/fPSQG1720455771.jpg" alt="Avatar" className="shadow rounded-full max-w-full h-auto align-middle border-[2px] border-blue-500" />
-									</div>
-								</div>
-							</div>
-							<div className='absolute bottom-0 flex-col items-center hidden w-32 -ml-[50px] md:-ml-[100px] mb-24 md:mb-64 lg:group-hover:flex'>
-								<span className='p-2 w-32 h-[50px] relative z-10 text-xs leading-none text-sh-white whitespace-no-wrap bg-sh-dark shadow-lg rounded-md'>
+							<img src="https://i.imghippo.com/files/fPSQG1720455771.jpg" alt="Avatar" className="shadow rounded-full max-w-full h-auto align-middle border-[2px] border-blue-500" />
+							<div className='absolute top-[-100px] left-[-40px] flex-col items-center hidden group-hover:flex'>
+								<span className='p-2 w-32 h-auto text-xs leading-none text-sh-white whitespace-no-wrap bg-sh-dark shadow-lg rounded-md'>
 									{typedText}
 								</span>
-								<div className='before:content-[""] before:w-0 before:h-0 before:absolute before:border-r-[12px] md:before:border-r-[24px] before:border-r-sh-dark before:border-l-[6px] md:before:border-l-[12px] before:border-l-transparent before:border-t-[6px] md:before:border-t-[12px] before:border-t-sh-dark before:border-b-[10px] md:before:border-b-[20px] before:border-b-transparent before:right-3 before:-bottom-3'></div>
+								<div className='before:content-[""] before:w-0 before:h-0 before:absolute before:border-r-[12px] before:border-r-sh-dark before:border-l-[6px] before:border-l-transparent before:border-t-[6px] before:border-t-sh-dark before:border-b-[10px] before:border-b-transparent before:left-1/2 before:-translate-x-1/2 before:-bottom-3'></div>
 							</div>
 						</div>
 					</div>
