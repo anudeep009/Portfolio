@@ -1,9 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ButtonComponent from '../utils/ButtonComponent';
 import projects from '../data/projects';
 
-const ProjectCard = ({ title, description, image }) => {
+const Projects = () => {
   const imageVariants = {
     hover: { scale: 1.1 },
     tap: { scale: 0.95 },
@@ -14,76 +13,82 @@ const ProjectCard = ({ title, description, image }) => {
     tap: { scale: 0.9 },
   };
 
-  const cardVariants = {
+  const containerVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const projectVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   return (
     <motion.div
-      className="relative flex flex-col mt-6 text-white bg-gray-800 shadow-md bg-clip-border rounded-xl w-96 mx-auto"
+      className="text-center mt-20 p-6 bg-[#171923] text-white"
       initial="hidden"
       animate="visible"
-      variants={cardVariants}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ duration: 0.3 }}
+      variants={containerVariants}
     >
+      <p className="text-3xl font-bold mb-6">What have I created?</p>
+      <p className="mb-12">Creating is always attractive and I tried to never deprive myself of this pleasure, here you can see the projects published by me.</p>
       <motion.div
-        className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40"
-        variants={imageVariants}
-        whileHover="hover"
-        whileTap="tap"
+        className="flex flex-wrap justify-center items-start mb-10"
+        variants={containerVariants}
       >
-        <img src={image} alt={title} className="object-cover w-full h-full" />
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 flex flex-col items-center p-4"
+            variants={projectVariants}
+          >
+            <motion.div
+              className="relative w-full overflow-hidden text-white shadow-lg bg-clip-border rounded-xl"
+              variants={imageVariants}
+              whileHover="hover"
+              whileTap="tap"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="object-cover w-full h-40 sm:h-56 md:h-64"
+              />
+            </motion.div>
+            <h1 className="text-2xl mt-4 mb-2">{project.title}</h1>
+            <div className="flex gap-2">
+              <motion.a
+                href={project.livelink}
+                target="_blank"
+                className="text-sm px-4 py-2 rounded-lg bg-pink-500 hover:bg-pink-600"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                Live
+              </motion.a>
+              <motion.a
+                href={project.githublink}
+                target="_blank"
+                className="text-sm px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-600"
+                variants={buttonVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                Source
+              </motion.a>
+            </div>
+          </motion.div>
+        ))}
       </motion.div>
-      <div className="p-6">
-        <h5 className="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-          {title}
-        </h5>
-        <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-          {description}
-        </p>
-      </div>
-      <div className="p-6 pt-0">
-        <motion.button
-          className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10"
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
-          type="button"
-        >
-          Live link
-        </motion.button>
-        <motion.button
-          className="ml-4 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10"
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
-          type="button"
-        >
-          Github Link
-        </motion.button>
-      </div>
     </motion.div>
   );
 };
-
-const Projects = () => (
-  <motion.div
-    className="mt-20 p-6 bg-[#171923] text-center text-white"
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-  >
-    <h1 className="text-3xl font-bold mb-6">What have I created?</h1>
-    <p className="mb-12">Creating is always attractive and I tried to never deprive myself of this pleasure, here you can see the projects published by me.</p>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {projects.map((project) => (
-        <ProjectCard key={project.title} {...project} />
-      ))}
-    </div>
-  </motion.div>
-);
 
 export default Projects;
