@@ -19,7 +19,7 @@ const projects = [
     description: 'A portfolio website',
     image: 'https://i.imghippo.com/files/dKQwF1720676803.png',
     githublink : 'https://github.com/anudeep009/Portfolio',
-    livelink : 'https://portfolio-neon-omega-75.vercel.app/',
+    livelink : 'https://portfolio-nine-swart-65.vercel.app/',
     },
   ];
   
