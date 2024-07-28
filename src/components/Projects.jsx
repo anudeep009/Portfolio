@@ -38,7 +38,9 @@ const Projects = () => {
       variants={containerVariants}
     >
       <p className="text-3xl font-bold mb-6">What have I created?</p>
-      <p className="mb-12">Creating is always attractive and I tried to never deprive myself of this pleasure, here you can see the projects published by me.</p>
+      <p className="mb-12">
+        Creating is always attractive and I tried to never deprive myself of this pleasure, here you can see the projects published by me.
+      </p>
       <motion.div
         className="flex flex-wrap justify-center items-start mb-10"
         variants={containerVariants}
@@ -62,6 +64,7 @@ const Projects = () => {
               />
             </motion.div>
             <h1 className="text-2xl mt-4 mb-2">{project.title}</h1>
+            <p className="mb-4">{project.description}</p>
             <div className="flex gap-2">
               <motion.a
                 href={project.livelink}

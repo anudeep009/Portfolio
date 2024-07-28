@@ -3,7 +3,7 @@ const projects = [
     {
       title: 'CryptoWhiz',
       description: 'CoinWhiz is a cryptocurrency price tracker web application built using React.',
-      image: 'https://i.imghippo.com/files/BXgoA1720676317.png',
+      image: 'https://i.imghippo.com/files/P0E1t1722178573.png',
       githublink : 'https://github.com/anudeep009/CryptoWhiz',
       livelink : 'https://crypto-whiz.vercel.app/',
     },
