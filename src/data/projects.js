@@ -1,27 +1,27 @@
 
 const projects = [
-    {
-      title: 'CryptoWhiz',
-      description: 'CoinWhiz is a cryptocurrency price tracker web application built using React.',
-      image: 'https://i.imghippo.com/files/P0E1t1722178573.png',
-      githublink : 'https://github.com/anudeep009/CryptoWhiz',
-      livelink : 'https://crypto-whiz.vercel.app/',
-    },
-    {
-        title: 'QuickMart',
-        description: 'Modern and user-friendly ecommerce website',
-        image: 'https://i.imghippo.com/files/dAO5H1720676647.png',
-        githublink : 'https://github.com/anudeep009/Ecommerce-Website',
-        livelink : 'https://ecommerce-website-eight-snowy.vercel.app/Products',
-    },
-    {
-    title: 'Portfolio',
-    description: 'A portfolio website',
-    image: 'https://i.imghippo.com/files/dKQwF1720676803.png',
-    githublink : 'https://github.com/anudeep009/Portfolio',
-    livelink : 'https://portfolio-nine-swart-65.vercel.app/',
-    },
-  ];
+  {
+    title: "Chat-Application",
+    description: "A Real-time Chat Application built using MERN Stack.",
+    image: "https://i.postimg.cc/Z5wDhDT9/Screenshot-2024-11-11-114534.png",
+    githublink: "https://github.com/anudeep009/ChatApplication",
+    livelink: "https://chatbox-hl0b.onrender.com/",
+  },
+  {
+    title: "Blog-App",
+    description: "A blog application built using the MERN stack.",
+    image: "https://i.postimg.cc/xCMRqsS3/Screenshot-2024-11-11-115321.png",
+    githublink: "https://github.com/anudeep009/Blog-App",
+    livelink: "https://blog-app-coral-one.vercel.app/",
+  },
+  {
+    title: "Coin-Whiz",
+    description: "CoinWhiz is a cryptocurrency price tracker web application.",
+    image: "https://i.postimg.cc/VkvWXs86/Screenshot-2024-11-11-115528.png",
+    githublink: "https://github.com/anudeep009/CoinWhiz",
+    livelink: "https://coin-whiz.vercel.app/",
+  },
+];
   
   export default projects;
   

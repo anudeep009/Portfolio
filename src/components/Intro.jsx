@@ -74,13 +74,12 @@ const Intro = () => {
 							<span className='font-bold tracking-widest animate-up bg-gradient-to-r from-sh-purple to-sh-purple cursor-default select-none'>
 								Anudeep Avula
 							</span>
-							, a web developer
+							, a full-stack web developer
 						</span>
-						from India who focuses on frontend technologies & collaborates
-						to open source projects.
+						from India with expertise in both frontend and backend technologies.
+						I specialize in building dynamic, scalable web applications using the MERN stack.
 						<span className='mt-5 block'>
-							I am passionate about building excellent software that improves
-							the lives of those around me.
+							I am passionate about creating software that positively impacts people's lives.
 						</span>
 					</h1>
 				</div>
