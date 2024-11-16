@@ -70,17 +70,16 @@ const Intro = () => {
 
 					<h1 className='text-xl md:text-2xl font-normal leading-8 md:leading-10'>
 						<span className='block'>
-							I am{' '}
+							Hey! I am{' '}
 							<span className='font-bold tracking-widest animate-up bg-gradient-to-r from-sh-purple to-sh-purple cursor-default select-none'>
 								Anudeep Avula
 							</span>
 							, a full-stack web developer
-						</span>
 						from India with expertise in both frontend and backend technologies.
-						I specialize in building dynamic, scalable web applications using the MERN stack.
-						<span className='mt-5 block'>
-							I am passionate about creating software that positively impacts people's lives.
 						</span>
+						I'm really into making websites. Been doing it for about a year now.
+						I work with stuff like TypeScipt, JavaScript, React, and Node.js.
+						
 					</h1>
 				</div>
 			</div>
