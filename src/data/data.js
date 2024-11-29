@@ -40,14 +40,14 @@ export const institutions = [
 		startDate: '2022',
 		endDate: '2026',
 	},
-	{
-		id: 2,
-		institution: 'Sri Vijaya Nandha Junior College',
-		logo: 'https://i.imghippo.com/files/CdFwH1720610466.png',
-		degree: 'Higher Secondary Certificate, Science',
-		startDate: '2020',
-		endDate: '2022',
-	},
+	// {
+	// 	id: 2,
+	// 	institution: 'Sri Vijaya Nandha Junior College',
+	// 	logo: 'https://i.imghippo.com/files/CdFwH1720610466.png',
+	// 	degree: 'Higher Secondary Certificate, Science',
+	// 	startDate: '2020',
+	// 	endDate: '2022',
+	// },
 	// {
 	// 	id: 3,
 	// 	institution: 'Zilla Parishad High School, Vadlamannadu',

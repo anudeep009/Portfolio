@@ -9,7 +9,7 @@ const NavBar = () => {
   const webLinks = [
     { name: 'About', path: '/about' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Open Source', path: '/open-source' },
+    // { name: 'Open Source', path: '/open-source' },
     { name: 'Contact', path: '/contact' },
   ];
 
