@@ -54,11 +54,36 @@ export const skills = [
     name: "Java",
     logo: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
   },
-//   {
-//     id: 9,
-//     name: "Python",
-//     logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-//   },
+  {
+    id: 13,
+    name: "MongoDB",
+    logo: "https://www.mongodb.com/assets/images/global/favicon.ico",
+  },
+  {
+    id: 14,
+    name: "Express.js",
+    logo: "https://expressjs.com/images/favicon.png",
+  },
+  {
+    id: 15,
+    name: "Socket.IO",
+    logo: "https://socket.io/images/logo.svg",
+  },
+  {
+    id: 16,
+    name: "Redux",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png",
+  },
+  {
+    id: 17,
+    name: "Recoil",
+    logo: "https://recoiljs.org/img/logo.svg",
+  },
+  //   {
+  //     id: 9,
+  //     name: "Python",
+  //     logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+  //   },
   // {
   //     id: 13,
   //     name: 'Prisma',
